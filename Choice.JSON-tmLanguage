@@ -1,0 +1,50 @@
+// [PackageDev] target_format: plist, ext: tmLanguage
+{
+    "name": "Choice",
+    "scopeName": "source.choice",
+    "fileTypes": ["ch", "choice"],
+    "uuid": "81767a3b-7291-4360-b196-e4f7a516ddd6",
+    "patterns": [
+        {
+            "match": "(0[0-9]+)|(0[Xx][0-9A-Fa-f]+)|(\\d*\\.?\\d+(?:[Ee](?:[+-]?\\d+)?)?)",
+            "name": "constant.numeric.choice"
+        },
+        {
+            "match": "'([^\\\\']|\\\\.)*'",
+            "name": "string.quoted.single.choice"
+        },
+        {
+            "match": "\"([^\\\\\"]|\\\\.)*\"",
+            "name": "string.quoted.double.choice"
+        },
+        {
+            "match": "\\b(true|false|null|undefined)\\b|@[0-9]*",
+            "name": "constant.language.choice"
+        },
+        {
+            "match": "\\b(if|else|loop|while|for|break|continue|returns?)\\b|->",
+            "name": "keyword.control.choice"
+        },
+        {
+            "match": "\\b(typeof|instanceof|in)\\b",
+            "name": "keyword.operator.choice"
+        },
+        {
+            "match": "//.*$",
+            "name": "comment.line.double-slash.choice"
+        },
+        {
+            "match": "#.*$",
+            "name": "comment.line.number-sign.choice"
+        },
+        {
+            "begin": "/\\*",
+            "end": "\\*/",
+            "name": "comment.block.choice"
+        },
+        {
+            "match": "===|!==|\\+\\+|--|&&|\\|\\||~|\\?|:|(!|\\*|/|%|\\+|-|<<|>>>?|<|>|&|\\^|\\||)=?|==|=",
+            "name": "keyword.operator.choice"
+        }
+    ]
+}
