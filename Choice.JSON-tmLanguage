@@ -30,6 +30,15 @@
             "name": "keyword.operator.choice"
         },
         {
+            "match": "\\b(func(?:tion)?)\\s+([$_A-Za-z][$_0-9A-Za-z]*)?\\s*\\(([^)]*)\\)",
+            "name": "meta.function.choice",
+            "captures": {
+                "1": {"name": "storage.type.function.choice"},
+                "2": {"name": "entity.name.function.choice"},
+                "3": {"name": "variable.parameter.choice"}
+            }
+        },
+        {
             "match": "//.*$",
             "name": "comment.line.double-slash.choice"
         },
