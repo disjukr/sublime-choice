@@ -53,6 +53,25 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
+					<string>storage.type.variable.choice</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.variable.choice</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>\b(va[rl]|const)\b\s+([$_A-Za-z][$_0-9A-Za-z]*)</string>
+			<key>name</key>
+			<string>meta.variable.choice</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
 					<string>storage.type.function.choice</string>
 				</dict>
 				<key>2</key>

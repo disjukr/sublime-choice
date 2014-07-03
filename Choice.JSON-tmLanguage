@@ -30,6 +30,14 @@
             "name": "keyword.operator.choice"
         },
         {
+            "match": "\\b(va[rl]|const)\\b\\s+([$_A-Za-z][$_0-9A-Za-z]*)",
+            "name": "meta.variable.choice",
+            "captures": {
+                "1": {"name": "storage.type.variable.choice"},
+                "2": {"name": "entity.name.variable.choice"}
+            }
+        },
+        {
             "match": "\\b(func(?:tion)?)\\s+([$_A-Za-z][$_0-9A-Za-z]*)?\\s*\\(([^)]*)\\)",
             "name": "meta.function.choice",
             "captures": {
