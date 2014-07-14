@@ -48,6 +48,12 @@
 			<string>keyword.operator.choice</string>
 		</dict>
 		<dict>
+			<key>match</key>
+			<string>\b(match)\b</string>
+			<key>name</key>
+			<string>keyword.other.choice</string>
+		</dict>
+		<dict>
 			<key>captures</key>
 			<dict>
 				<key>1</key>

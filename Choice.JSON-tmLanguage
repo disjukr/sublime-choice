@@ -30,6 +30,10 @@
             "name": "keyword.operator.choice"
         },
         {
+            "match": "\\b(match)\\b",
+            "name": "keyword.other.choice"
+        },
+        {
             "match": "\\b(va[rl]|const)\\b\\s+([$_A-Za-z][$_0-9A-Za-z]*)",
             "name": "meta.variable.choice",
             "captures": {
